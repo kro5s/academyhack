@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Marko+One&family=PT+Sans:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* map */
+
+.leaflet-container {
+    max-width: 1200px;
+    height: 550px;
+    border-radius: 30px;
+}
+
+.leaflet-attribution-flag {
+    & path {
+        fill: transparent !important;
+    }
+}
