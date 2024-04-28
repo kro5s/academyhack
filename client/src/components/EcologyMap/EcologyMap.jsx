@@ -1,10 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Circle, FeatureGroup, MapContainer, Popup, TileLayer} from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "../../index.css"
 
 const EcologyMap = () => {
     const [mapMode, setMapMode] = useState('ecology');
+
+    useEffect(() => {
+        fetch('http://localhost:8080/api')
+            .then(response => response.json())
+            .then(json => console.log(json))
+    }, [])
 
     const handleMapModeChange = () => {
         if (mapMode === 'ecology') {
