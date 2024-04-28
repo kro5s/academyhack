@@ -1,0 +1,5 @@
+com\maxlvshv\hackproj\entity\SensorEntity.class
+com\maxlvshv\hackproj\repository\SensorRepo.class
+com\maxlvshv\hackproj\HackprojApplication.class
+com\maxlvshv\hackproj\controller\SensorController.class
+com\maxlvshv\hackproj\service\SensorService.class
